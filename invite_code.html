@@ -10,7 +10,7 @@
         const invite_code = paramsObject.invite_code; // '邀请码'
         //获取网址
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://www.yunplus.site/site.txt', true);
+        xhr.open('GET', 'https://www.duoyun.site/site.txt', true);
         xhr.onload = function() {
             const sitesStr = this.responseText.trim();
             var sitesArr =  sitesStr.split("\n");
@@ -60,8 +60,14 @@
         }
     }
 </script>
+<style>
+    .invite_url_class{
+        font-size: 60px;
+        font-weight: bold;
+    }
+</style>
 <body>
-<p id="invite_p">多云vpn正在为您跳转链接，长时间未跳转请手动点击下方链接 <h2><a id="invite_url" href="">点我！</a></h2></p>
+<p id="invite_p">多云vpn正在为您跳转链接，长时间未跳转请手动点击下方链接 <h1><a class="invite_url_class" id="invite_url" href="">点我！</a></h1></p>
 --------------------------------------------------------------------------------------------------------
 <br>
 <p>
